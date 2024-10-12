@@ -3,3 +3,4 @@
 # Weather APP
 
 Using ReactJS & Material UI.
+Fully Responsive, added dark and light mode switch.

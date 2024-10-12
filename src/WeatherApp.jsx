@@ -11,8 +11,8 @@ export default function WeatherApp() {
         tempMax: 34.05,
         tempMin: 34.05,
         weather: "haze"
-    });
-    const [units, setUnits] = useState('metric');
+    }); //default values
+    const [units, setUnits] = useState('metric');   //metric or imperial
 
     return (
         <div style={{textAlign: "center"}}>
