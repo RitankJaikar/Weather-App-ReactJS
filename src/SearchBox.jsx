@@ -119,9 +119,9 @@ export default function SearchBox({setWeatherInfo, units, setUnits}) {
             <h3>Search For Weather</h3>
             <form onSubmit={handleSubmit}>
                 <Stack direction="row" spacing={1} sx={{ alignItems: 'center', justifyContent: 'center'}}>
-                    <Typography>F</Typography>
+                    <Typography>&deg;F</Typography>
                     <AntSwitch inputProps={{ 'aria-label': 'ant design' }} onChange={handleUnitChange} checked={units === 'metric' ? true : false } />
-                    <Typography sx={{marginLeft: '5px !important'}}>&deg;C</Typography>
+                    <Typography sx={{marginLeft: '8px !important'}}>&deg;C</Typography>
                 </Stack>
                 <TextField required id="city" label="City Name" variant="outlined" onChange={handleChange} value={city}/>
                 <br /><br />
