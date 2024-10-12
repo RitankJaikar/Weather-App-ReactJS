@@ -12,12 +12,13 @@ export default function WeatherApp() {
         tempMin: 34.05,
         weather: "haze"
     });
+    const [units, setUnits] = useState('metric');
 
     return (
         <div style={{textAlign: "center"}}>
             <h1>Weather APP</h1>
-            <SearchBox setWeatherInfo={setWeatherInfo}/>
-            <InfoBox info={weatherInfo}/>
+            <SearchBox setWeatherInfo={setWeatherInfo} units={units} setUnits={setUnits} />
+            <InfoBox info={weatherInfo} units={units} />
         </div>
     )
 }
